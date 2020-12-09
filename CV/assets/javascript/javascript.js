@@ -29,7 +29,7 @@ form.addEventListener('submit', function(e){
 const validSujet=function(inputSujet)
 //Regex
 {
-    let SujetRegExp = new RegExp (/^[a-zA-Zéèàùîïâäêëüû0-9,.-_()'"^\/*-+:;=\[\]{}&#°@%¨$£¤§!²]+/);
+    let SujetRegExp = new RegExp (/^[a-zA-Zéèàùîïâäêëüû0-9,\.\-\_()'"^\/*-+:;=\[\]{}&#°@%¨$£¤§!²]+$/);
 
     //Recuperation de la balise small
     let small = inputSujet.nextElementSibling;
@@ -84,7 +84,7 @@ const validEmail=function(inputEmail)
 const validContenu=function(inputContenu)
 //Regex
 {
-    let ContenuRegExp = new RegExp (/^[a-zA-Zéèàùîïâäêëüû0-9,.-_()'"^\/*-+:;=\[\]{}&#°@%¨$£¤§!²]+/);
+    let ContenuRegExp = new RegExp (/^[a-zA-Zéèàùîïâäêëüû0-9,\.\-\_()'"^\/*-+:;=\[\]{}&#°@%¨$£¤§!²]+$/);
 
     //Recuperation de la balise small
     let small = inputContenu.nextElementSibling;
